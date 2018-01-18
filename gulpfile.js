@@ -36,6 +36,7 @@ const assetsDir = './src/styles/assets/**/*';
 const assetsOutputPath = './public/assets/';
 
 gulp.task('assets', function() {
+
     log('');
     log('**** executing assets copy to build task *** ');
     log('');
@@ -48,15 +49,10 @@ gulp.task('assets', function() {
     log('');
 });
 
-gulp.task('cleanAssets', function() {
-    console.log('Cleaning assets directory');
-    del('./public/assets/**/*');
-});
-
 // Watching static files
 gulp.task('watch', () => {
     gulp.watch('./src/styles/**/*.scss', ['sass']);
-    gulp.watch('./src/styles/assets/**/*', ['cleanAssets','assets']);
+    gulp.watch('./src/styles/assets/**/*', ['assets']);
 });
 
-gulp.task('default', ['cleanAssets', 'assets', 'sass']);
+gulp.task('default', ['assets', 'sass']);
