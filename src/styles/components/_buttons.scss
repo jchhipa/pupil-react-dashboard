@@ -1,0 +1,11 @@
+.btn {
+  color: #fff;
+  background: $color-secondary;
+  padding: 9px 20px;
+  border-radius: 25px;
+  &--glossy {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 9px 34px -1px lighten($color-secondary, 10%);
+  }
+}

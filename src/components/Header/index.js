@@ -6,7 +6,7 @@ class Header extends Component {
 
         return (
             <header className="app-header">
-                
+                Header
             </header>
         )
     }

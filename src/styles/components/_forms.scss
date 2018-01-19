@@ -1,0 +1,31 @@
+.fieldset {
+  margin-top: 25px;
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  /* enable absolute positioning */
+  .inner-addon {
+    position: relative;
+  }
+  /* style icon */
+  .inner-addon [class^="icon-"] {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+  }
+  /* align icon */
+  .left-addon [class^="icon-"] {
+    left: 0px;
+  }
+  .right-addon [class^="icon-"] {
+    right: 0px;
+  }
+  /* add padding  */
+  .left-addon input {
+    padding-left: 30px;
+  }
+  .right-addon input {
+    padding-right: 30px;
+  }
+}

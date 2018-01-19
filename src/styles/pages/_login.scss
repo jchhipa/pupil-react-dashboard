@@ -1,0 +1,29 @@
+
+#page-login {
+  background: $color-base;
+  height: 100vh;
+  display: flex;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .logo {
+      margin-top: 6%;
+      margin-bottom: 35px;
+    }
+
+    .login-box {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 40px 120px -12px darken($color-base, 24%);
+      padding: 45px;
+      width: 41%;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+}
