@@ -1,9 +1,15 @@
-import Container from './Header';
-import UI from './HeaderUI';
+import React, { Component } from 'react';
 
-const Header = {
-    Container: Container,
-    UI: UI
-};
+class Header extends Component {
+
+    render() {
+
+        return (
+            <header className="app-header">
+                
+            </header>
+        )
+    }
+}
 
 export default Header;

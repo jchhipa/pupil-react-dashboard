@@ -6,14 +6,12 @@ import {
 
 import Home from './../Home/';
 
-const HomeContainer = Home.Container;
-
 class Router extends Component {
   render() {
     return (
     <main>
       <Switch>
-        <Route exact path='/' component={HomeContainer}/>
+        <Route exact path='/' component={Home}/>
       </Switch>
     </main>
     )
