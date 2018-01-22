@@ -1,29 +1,66 @@
 
 #page-login {
   background: $color-base;
-  height: 100vh;
+  background: linear-gradient(45deg, #3a3a60 0%,#5f5f8e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a60', endColorstr='#5f5f8e',GradientType=1 );
+  min-height: 100vh;
   display: flex;
-
+  
   .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    
     .logo {
-      margin-top: 6%;
+      margin-top: 5%;
       margin-bottom: 35px;
+      transform: scale(0.92)
     }
 
     .login-box {
       background: #fff;
       border-radius: 5px;
-      box-shadow: 0 40px 120px -12px darken($color-base, 24%);
+      box-shadow: 0 56px 160px 28px rgba(0, 0, 0, 0.43);
       padding: 45px;
-      width: 41%;
+      width: 48%;
+      min-width: 500px;
+      margin-bottom: 95px;
       .btn {
         width: 100%;
+      }
+
+      .icon-envelope {
+        transform: scale(0.8)
+      }
+      
+    }
+
+    .form-actions {
+      margin-top: 35px;
+      .link-forgot {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: $color-text;
+        text-decoration: underline;
+        &:hover {
+          color: darken($color-text, 15%);
+        }
       }
     }
   }
 
+}
+
+@media only screen and (max-width: 767px) {
+  #page-login {
+    .container {
+      .login-box {
+        padding: 15px;
+        min-width: 280px;
+        width: 100%;
+      }
+    }
+  }
 }

@@ -1,0 +1,14 @@
+
+.apex-progress {
+    height: 60px;
+    overflow: hidden;
+}
+
+
+#viewsAnalytics .apexcharts-tooltip{
+    border-radius: 35px;
+    background: #67cdc8;
+    box-shadow: none;
+    color: #fff;
+    padding-top: 12px;
+}

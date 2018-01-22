@@ -1,11 +1,66 @@
 .btn {
-  color: #fff;
-  background: $color-secondary;
+  color: $color-base;
+  background: #fff;
   padding: 9px 20px;
   border-radius: 25px;
+  font-weight: 400;
+  box-shadow: 0 10px 20px 0 rgba(#3A3A60, 0.1);
+
   &--glossy {
+    color: #fff;
+    background: $color-secondary;
+    border-radius: 32px;
+    padding: 15px;
     margin-top: 15px;
     margin-bottom: 35px;
-    box-shadow: 0 9px 34px -1px lighten($color-secondary, 10%);
+    box-shadow: 0 6px 39px -1px lighten($color-secondary, 1%);
+  }
+
+  &--dark {
+    color: #fff;
+    background: $color-base;
+  }
+
+  &--icon {
+    padding-left: 15px;
+    [class^="icon-"] {
+      margin-right: 5px;
+    }
+  }
+
+  &--no-shadow {
+    box-shadow: none;
+  }
+
+  &--transparent {
+    color: $color-text;
+    background: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    padding: 9px 20px;
+    box-shadow: none;
+  }
+
+  &--success {
+    color: darken($color-success, 5%);
+    background: rgba($color-success, 0.1);
+  }
+
+  &--danger {
+    color: $color-danger;
+    background: rgba($color-danger, 0.1);
+  }
+
+  &:hover, &:active, &:focus {
+    outline: none !important;
+  }
+}
+
+
+
+@media  only screen and (max-width: 767px) {
+  .btn {
+    padding: 9px;
+   
   }
 }

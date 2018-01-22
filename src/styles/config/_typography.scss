@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'sofia_pro_black';
+    src: url('../assets/fonts/sofia_pro_black-webfont.woff2') format('woff2'),
+      url('../assets/fonts/sofia_pro_black-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia_pro_bold';
+    src: url('../assets/fonts/sofia_pro_bold-webfont.woff2') format('woff2'),
+      url('../assets/fonts/sofia_pro_bold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia_pro_medium';
+    src: url('../assets/fonts/sofia_pro_medium-webfont.woff2') format('woff2'),
+      url('../assets/fonts/sofia_pro_medium-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia_pro_semi_bold';
+    src: url('../assets/fonts/sofia_pro_semi_bold-webfont.woff2') format('woff2'),
+      url('../assets/fonts/sofia_pro_semi_bold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia_pro_regular';
+    src: url('../assets/fonts/sofia_pro_regular-webfont.woff2') format('woff2'),
+      url('../assets/fonts/sofia_pro_regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url('../assets/fonts/Graphik-Regular.woff2') format('woff2'),
+      url('../assets/fonts/Graphik-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik-Bold';
+    src: url('../assets/fonts/Graphik-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Graphik-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$font-primary: 'Graphik-Regular', Helvetica, Arial, sans-serif;
+$font-primary-bold: 'Graphik-Bold', Helvetica, Arial, sans-serif;
+$font-secondary:  'sofia_pro_medium', Helvetica, Arial, sans-serif;
+$font-secondary-bold:  'sofia_pro_bold', Helvetica, Arial, sans-serif;
+$font-light: 'sofia_pro_regular', Helvetica, Arial, sans-serif;
+
+body {
+  color: $color-text;
+  font-family: $font-primary;
+  font-size: 15px;
+}
+
+h1, h2 {
+  color: $color-base;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}

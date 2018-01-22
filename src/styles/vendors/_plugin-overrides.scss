@@ -1,0 +1,39 @@
+.dropdown {
+    button.btn {
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+        &:hover, &:focus {
+            box-shadow: none !important;
+            border: 0;
+            padding: 0;
+            background: transparent !important;
+            color: #333 !important;
+        }
+    }
+    &.show {
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+            top: 150%;
+            display: block;
+            box-shadow: 0 6px 23px 0px rgba(#8E8DA4, .4);
+
+            h6 {
+                color: lighten($color-text, 20%);
+                font-size: 12px;
+            }
+            button {
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+.apex-progress {
+    #apexcharts-title-text {
+        font-weight: 400;
+    }
+}

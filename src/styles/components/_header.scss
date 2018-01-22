@@ -1,0 +1,186 @@
+
+.app-header {
+    background: #fff;
+    padding: 5px 25px;
+    box-shadow: 0 15px 24px 0 rgba(#3A3A60, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        color: $color-text;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover, &:focus, &.active {
+            color: $color-base;
+            position: relative;
+        }
+        &.active {
+            &:before {
+                content: "";
+                position: absolute;
+                left: -45px;
+                right: -45px;
+                top: 40px;
+                border-top: 4px solid $color-secondary;
+            }
+        }
+    }
+
+    .logo {
+        text-align: left;
+        transform: scale(.55) translate(-40%,0%)
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    nav {
+        padding-top: 14px;
+        li {
+            font-size: 14px;
+            margin: 0 45px;
+            display: inline-block;
+        }
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        justify-content: flex-end;
+        text-align: right;
+        .avatar {
+            height: 40px;
+            width: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                height: 60px;
+                width: auto;
+            }
+        }
+        .userinfo {
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            .name {
+                color: $color-base;
+            }
+            .desc {
+                font-size: 12px;
+            }
+        }
+        .icon-chevron-down {
+            font-size: 8px;
+        }
+    }
+}
+
+
+.admin-header {
+    margin-top: 40px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 5px 15px 5px 0;
+            + li {
+                margin-left: 15px;
+            }
+        }
+    }
+    a {
+        @extend .btn--transparent;
+        text-decoration: none;
+    }
+
+    .btn--icon {
+        a { 
+            padding: 0;
+        }
+    }
+
+    .active {
+      @extend .btn;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+}
+
+@media  only screen and (max-width: 767px) {
+    .app-header {
+        flex-direction: row;
+        text-align: center;
+        flex-flow: wrap;
+        .logo {
+            
+            order: 1;
+            flex: 1 50%;
+        }
+        nav {
+            order: 3;
+            flex: 2 100%;
+            li {
+                margin: 0 15px;
+            }
+        }
+        .user {
+            flex: 1 50%;
+            order: 2;
+        }
+        a {
+            &.active {
+                &:before {
+                    left: -5px;
+                    right: -5px;
+                }
+            }
+        }
+    }
+
+    .admin-header {
+        ul {
+            li {
+                margin: 0 0 15px 0;
+            }
+
+            a {
+                padding: 8px;
+            }
+        }
+
+
+        .btn--icon {
+            display: none;
+        }
+    }
+}
+
+
+@media  only screen and (max-width: 479px) {
+    .app-header {
+         .logo {
+            width: 50%;
+            flex: 1;
+            img {
+                min-width: 50px;
+                max-width: 150%;
+                display: block;
+                height: auto;
+            }
+        }
+        nav {
+            li {
+                font-size: 12px;
+                margin: 0 5px;
+            }
+        }
+        .user {
+            flex: 1;
+        }
+    }
+}
+

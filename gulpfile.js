@@ -51,7 +51,7 @@ gulp.task('assets', function() {
 
 // Watching static files
 gulp.task('watch', () => {
-    gulp.watch('./src/styles/**/*.scss', ['sass']);
+    gulp.watch('./src/styles/**/*.scss', ['sass', 'assets']);
     gulp.watch('./src/styles/assets/**/*', ['assets']);
 });
 

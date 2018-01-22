@@ -1,0 +1,66 @@
+h1.page-title {
+    font-size: 42px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.box {
+    background: #fff;
+    box-shadow: 0 6px 23px 0px rgba(#8E8DA4, .08);
+    padding: 23px;
+    border-radius: 4px;
+    &--full {
+        padding: 25px 35px;
+        margin-block-end: 45px;
+        margin-top: 25px;
+    }
+}
+
+.thumbnail-image {
+    background-size: cover;
+    width: 104px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 0 13px 26px 0 rgba(#888896, 0.43);
+}
+
+.sidebar-right {
+    &.sidebar-fixed {
+        box-shadow: 0px 2px 107px 0 rgba(#3A3A60, 0.2);
+    }
+}
+
+.table-row {
+    &:hover {
+        box-shadow: 0 18px 29px 0 rgba(#8E8DA4, 0.29);
+    }
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title-left {
+        color: $color-base;
+    }
+
+    .title-right {
+        font-size: 12px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    h1.page-title {
+      font-size: 24px;
+    }
+
+    .box {
+        padding: 15px;
+        &--full {
+            padding: 12px;
+        }
+    }
+  }

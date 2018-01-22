@@ -2,9 +2,10 @@
 
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
-@import 'config/config';
+@import 'config/index';
 @import 'components/index';
 @import 'utils/index';
+@import 'themes/default';
 @import 'pages/index';
 @import 'vendors/index';
 

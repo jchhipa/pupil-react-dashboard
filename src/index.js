@@ -22,4 +22,4 @@ mainInitializer.init = () => {
 
 window.main = mainInitializer;
 window.main.init();
-registerServiceWorker();
+//registerServiceWorker();

@@ -1,8 +1,36 @@
+$input-active-color: #3A3A60;
+
+::placeholder {
+  color: $color-text !important;
+  opacity: 1; 
+}
+
+form.pupil-form {
+  input[type="text"], input[type="password"] {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #8E8DA4;
+    -webkit-appearance: none;
+    &:focus, &:active {
+      border-color: $input-active-color;
+      box-shadow: inset 0px 0px 0px 1px $input-active-color;
+      color: $input-active-color;
+      ~ [class^="icon-"] {
+        color: $input-active-color;
+      }
+    }
+  }
+}
+
 .fieldset {
   margin-top: 25px;
   .form-group {
     display: flex;
     align-items: center;
+  }
+
+  input {
+    padding: 18px;
   }
   /* enable absolute positioning */
   .inner-addon {
@@ -10,22 +38,24 @@
   }
   /* style icon */
   .inner-addon [class^="icon-"] {
+    color: $color-text;
     position: absolute;
     padding: 10px;
     pointer-events: none;
+    top: 12px;
   }
   /* align icon */
   .left-addon [class^="icon-"] {
-    left: 0px;
+    left: 10px;
   }
   .right-addon [class^="icon-"] {
-    right: 0px;
+    right: 10px;
   }
   /* add padding  */
   .left-addon input {
-    padding-left: 30px;
+    padding-left: 50px;
   }
   .right-addon input {
-    padding-right: 30px;
+    padding-right: 50px;
   }
 }

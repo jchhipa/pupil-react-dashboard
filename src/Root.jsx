@@ -6,9 +6,7 @@ export default class Root extends Component {
 
     render() {
         return (
-            <Router>
-                <App />
-            </Router>
+            <App />
         );
     }
 }

@@ -1,0 +1,105 @@
+
+#page-reports {
+    .top-performers {
+        .col-sm {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .top-performer {
+        display: flex;
+        .photo {
+            border-right: 25px solid transparent;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            .property-title {
+                font-size: 15px;
+                color: $color-base;
+                margin-bottom: 18px;
+            }
+            .result {
+                font-size: 10px;
+                height: 22px;
+                line-height: 22px;
+                padding: 0 9px;
+                border-radius: 10px;
+                @extend .btn--no-shadow;
+                &.success {
+                    @extend .btn--success;
+                    .fa:before {
+                        content: "\f0de";
+                    }
+                }
+                &.danger {
+                    @extend .btn--danger;
+                    .fa:before {
+                        content: "\f0dd";
+                    }
+                }
+                
+            }
+        }
+        .statistics {
+            display: flex;
+            h5 {
+                margin: 0;
+                font-size: 14px;
+            }
+            .time, .avg-time, .views {
+                border-right: 16px solid transparent;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .sparkline {
+            margin-left: 30px;
+        }
+    }
+
+    .quick-stats {
+        .box {
+            display: flex;
+            align-items: center;
+            padding: 0px 25px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: $color-base;
+            padding-top: 20px;
+        }
+        [class^="icon-"] {
+            margin-right: 25px;
+            font-size: 24px;
+            color: $color-secondary;
+        }
+    }
+}
+
+@media only screen and (max-width: 979px) {
+
+    #page-reports {
+        .quick-stats {
+           
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    #page-reports {
+        
+        .top-performer {
+            flex-direction: column;
+            .thumbnail-image {
+                margin-bottom: 40px;
+            }
+            .sparkline {
+                margin: 0;
+            }
+        }
+    }
+}
