@@ -142,12 +142,16 @@
     }
 
     .admin-header {
+        text-align: center;
         ul {
             li {
                 margin: 0 0 15px 0;
+                + li {
+                    margin-left: 0;
+                }
             }
 
-            a {
+            a, .active {
                 padding: 8px;
             }
         }
@@ -160,6 +164,24 @@
 }
 
 
+@media only screen and (min-width: 767px) and (max-width: 979px) {
+    
+    .app-header {
+        nav {
+            li {
+                margin: 0 15px;
+            }
+            a {
+                &.active {
+                    &:before {
+                        left: -15px;
+                        right: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media  only screen and (max-width: 479px) {
     .app-header {
          .logo {

@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Header from './../../../Header';
 import AdminNav from './../AdminNav';
+import Pagination from './../Pagination';
+import PropertyFilter from './PropertyFilter';
+import Listings from './Listings';
+import './Properties.css';
 
 class Properties extends Component {
 
@@ -11,6 +15,10 @@ class Properties extends Component {
                     <AdminNav />
                     <div className="container">
                     </div>
+
+                    <PropertyFilter />
+                    <Listings />
+                    <Pagination />
             </div>
         );
     }

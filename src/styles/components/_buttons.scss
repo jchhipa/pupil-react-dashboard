@@ -1,19 +1,33 @@
 .btn {
   color: $color-base;
   background: #fff;
-  padding: 9px 20px;
+  padding: 9px 25px;
   border-radius: 25px;
   font-weight: 400;
   box-shadow: 0 10px 20px 0 rgba(#3A3A60, 0.1);
 
-  &--glossy {
+  &--secondary {
     color: #fff;
     background: $color-secondary;
     border-radius: 32px;
-    padding: 15px;
+    .fa {
+      -webkit-text-stroke: 1px $color-secondary;
+      -moz-text-stroke: 1px $color-secondary;
+      text-stroke: 1px $color-secondary;
+    }
+  }
+
+  &--glossy {
+    @extend .btn--secondary;
     margin-top: 15px;
     margin-bottom: 35px;
+    padding: 15px;
     box-shadow: 0 6px 39px -1px lighten($color-secondary, 1%);
+  }
+
+  &--gray {
+    background: #efeff4;
+    color: $color-text;
   }
 
   &--dark {

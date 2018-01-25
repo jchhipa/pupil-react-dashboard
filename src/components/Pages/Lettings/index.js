@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-class Settings extends Component {
+class Lettings extends Component {
 
     render() {
 
         return (
-            <div id="page-settings">
+            <div id="page-lettings">
                 <div className="container">
-                    Settings
+                    Lettings
                 </div>
             </div>
         );
     }
 }
 
-export default Settings;
+export default Lettings;

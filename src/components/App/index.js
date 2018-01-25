@@ -5,7 +5,7 @@ import Header from './../Header';
 import Reports from './../Pages/Admin/Reports';
 import Orders from './../Pages/Admin/Orders';
 import Properties from './../Pages/Admin/Properties';
-import Settings from './../Pages/Settings/';
+import Lettings from './../Pages/Lettings/';
 import Sales from './../Pages/Sales/';
 import Login from './../Pages/Login/';
 
@@ -69,7 +69,7 @@ class App extends Component {
                         <DashboardRoute path="/admin/orders" component={Orders} />
                         <DashboardRoute path="/admin/properties" component={Properties} />
                         <DashboardRoute path="/sales" component={Sales} />
-                        <DashboardRoute path="/settings" component={Settings} />
+                        <DashboardRoute path="/lettings" component={Lettings} />
                     </Switch>
                 </Router>
             </div>

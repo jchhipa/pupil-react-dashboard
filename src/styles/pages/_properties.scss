@@ -1,0 +1,47 @@
+
+
+.property-list-item {
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px 0px rgba(#8E8DA4, .05);
+  .left, .right {
+    flex: 1 40%;
+    align-items: center;
+    > div {
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+    }
+  }
+  .middle {
+    flex: 1 0 0;
+  }
+  .right {
+    justify-content: flex-end;
+  }
+  .tag {
+    @extend .btn;
+    @extend .btn--no-shadow;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+    &.gray {
+        @extend .btn--gray;
+    }
+    &.danger {
+        @extend .btn--danger;
+    }
+  }
+  .property-title {
+    font-size: 16px;
+  }
+  .property-subtitle {
+    font-size: 14px;
+  }
+
+  &:hover {
+    box-shadow: 0 16px 26px 0px rgba(#8E8DA4, .25);
+  }
+
+  .edit {
+    cursor: pointer;
+  }
+}

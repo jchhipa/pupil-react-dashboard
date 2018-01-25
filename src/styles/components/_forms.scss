@@ -5,12 +5,15 @@ $input-active-color: #3A3A60;
   opacity: 1; 
 }
 
+input, select {
+  outline: none;
+  -webkit-appearance: none;
+}
+
 form.pupil-form {
   input[type="text"], input[type="password"] {
-    outline: none;
     border-radius: 5px;
     border: 1px solid #8E8DA4;
-    -webkit-appearance: none;
     &:focus, &:active {
       border-color: $input-active-color;
       box-shadow: inset 0px 0px 0px 1px $input-active-color;

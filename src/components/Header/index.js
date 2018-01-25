@@ -31,7 +31,7 @@ class Header extends Component {
                 <nav>
                     <ul>
                         <li><NavLink to="/sales">Sales</NavLink></li>
-                        <li><NavLink to="/settings">Settings</NavLink></li>
+                        <li><NavLink to="/lettings">Lettings</NavLink></li>
                         <li><NavLink to="/admin">Admin</NavLink></li>
                     </ul>
                 </nav>
@@ -49,7 +49,7 @@ class Header extends Component {
                             <span className="icon-chevron-down"></span>
                         </DropdownToggle>
                         <DropdownMenu right>
-                            <DropdownItem header>Settings</DropdownItem>
+                            <DropdownItem header>Lettings</DropdownItem>
                             <DropdownItem>Profile</DropdownItem>
                             <DropdownItem divider />
                             <DropdownItem onClick={this.logout.bind(this)}>Logout</DropdownItem>

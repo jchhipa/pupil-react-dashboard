@@ -33,7 +33,7 @@ class Home extends Component {
                             </div>
                             <div className="form-actions">
                                 <button type="submit" className="btn btn--glossy">SIGN IN</button>
-                                <a href="/" className="link-forgot">Forgot Password?</a>
+                                <a className="link-forgot">Forgot Password?</a>
                             </div>
                         </form>
                     </div>

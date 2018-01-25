@@ -78,11 +78,16 @@
     }
 }
 
-@media only screen and (max-width: 979px) {
+@media only screen and (min-width: 767px) and (max-width: 979px) {
 
     #page-reports {
         .quick-stats {
-           
+           .box {
+               padding: 0 10px;
+               p {
+                   min-height: 44px;
+               }
+           }
            
         }
     }

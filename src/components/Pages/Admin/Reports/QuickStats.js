@@ -8,7 +8,7 @@ class TimeAnalytics extends Component {
         return (
             <div className="container quick-stats mt-4 mb-5">
                 <div className="row">
-                  <div className="col-sm">
+                  <div className="col-sm-6 col-md-3">
                     <div className="box">
                       <div className="icon">
                         <span className="icon-property-search"></span>
@@ -19,7 +19,7 @@ class TimeAnalytics extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-sm">
+                  <div className="col-sm-6 col-md-3">
                     <div className="box">
                       <div className="icon">
                         <span className="icon-eye"></span>
@@ -30,7 +30,7 @@ class TimeAnalytics extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-sm">
+                  <div className="col-sm-6 col-md-3">
                     <div className="box">
                       <div className="icon">
                         <span className="icon-pie"></span>
@@ -41,7 +41,7 @@ class TimeAnalytics extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-sm">
+                  <div className="col-sm-6 col-md-3">
                     <div className="box">
                       <div className="icon">
                         <span className="icon-timer"></span>

@@ -10,6 +10,7 @@ import TimeAnalytics from './TimeAnalytics';
 import VisitsAnalytics from './VisitsAnalytics';
 import ViewsAvgAnalytics from './ViewsAvgAnalytics';
 import TopPerformers from './TopPerformers';
+import RangeSelector from './RangeSelector';
 
 class Reports extends Component {
 
@@ -20,8 +21,11 @@ class Reports extends Component {
               
                 <AdminNav showWeather={true} />
 
-                <h1 className="page-title container">Welcome Back, Faux Properties</h1>
+                <div className="container">
+                    <h1 className="page-title">Welcome Back, Faux Properties</h1>
+                </div>
 
+                <RangeSelector />
                 <QuickStats />
 
                 <div className="container">
