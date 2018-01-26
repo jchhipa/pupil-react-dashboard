@@ -4,8 +4,8 @@ import TopPerformer from './TopPerformer';
 class TopPerformers extends Component {
     render() {
         return (
-            <div className="top-performers">
-                <div className="title">
+            <div className="top-performers mt-5">
+                <div className="title pt-2">
                     <h5 className="title-left">Top Performers</h5>
                     <span className="title-right">Jan 2017 - Aug 2017</span>
                 </div>

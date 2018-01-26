@@ -17,6 +17,7 @@
   .right {
     justify-content: flex-end;
   }
+  
   .tag {
     @extend .btn;
     @extend .btn--no-shadow;
@@ -28,6 +29,12 @@
     }
     &.danger {
         @extend .btn--danger;
+    }
+    &.warning {
+      @extend .btn--warning;
+    }
+    &.success {
+      @extend .btn--success;
     }
   }
   .property-title {
@@ -43,5 +50,21 @@
 
   .edit {
     cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .property-list-item {
+    flex-direction: column;
+    align-items: left !important;
+    > div {
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+    }
+    
+    .property-status {
+      border-left: 14px solid transparent;
+    }
   }
 }

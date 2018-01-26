@@ -1,0 +1,52 @@
+body.overlay {
+  overflow-x: hidden;
+  overflow-y: auto;
+  &:after {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+  main {
+    filter: blur(2px);
+  }
+}
+
+.side-popup-wrap {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 101;
+}
+
+.side-popup {
+  background: lighten($color-gray, 5%);
+  position: absolute;
+  top: 0px;
+  min-height: 100vh;
+  right: 0;
+  min-width: 595px;
+  max-width: 495px;
+  z-index: 120;
+  padding: 25px;
+  box-shadow: -4px 0 5px 0px rgba(0, 0, 0, 0.25);
+  overflow-x: hidden;
+  overflow-y: auto;
+  #close-popup {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 50;
+    background: transparent;
+    &:hover {
+      background: transparent;
+      color: darken($color-base, 10%);
+    }
+  }
+}

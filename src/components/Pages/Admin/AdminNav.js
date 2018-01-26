@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
+import FadeAndSlide from '../../Animations/FadeAndSlide';
 
 class AdminNav extends Component {
 
     showWeatherButton() {
         return (
-            <li style={{pointerEvents: 'none'}} className="pull-right btn btn--dark btn--icon">
-                <span className="icon-sunny"></span>
-                <a>Sunny Today</a>                
+            <li  className="pull-right">
+                <FadeAndSlide
+                    startX={'50px'}
+                    startY={'0px'}
+                    delay={150}
+                    duration={100}
+                >
+                <span style={{pointerEvents: 'none'}} className="btn btn--dark btn--icon">
+                    <span className="icon-sunny"></span>
+                    <a>Sunny Today</a>  
+                </span>    
+                </FadeAndSlide>          
             </li>
         )
     }

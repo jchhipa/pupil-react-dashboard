@@ -86,6 +86,17 @@
   content: "\e90c";
   color: #3a3a60;
 }
+.icon-bed, .icon-bath-tub, .icon-property-area {
+  font-size: 80px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -20px;
+  top: -26px;
+}
+.property-area {
+  font-size: 96px;
+}
 .icon-bed:before {
   content: "\e90d";
   color: #78849c;

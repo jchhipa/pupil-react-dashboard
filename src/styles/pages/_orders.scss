@@ -1,0 +1,16 @@
+
+.orders-listings {
+  .property-list-item {
+    color: $color-base;
+    .tag {
+      min-width: 150px;
+    }
+    [class^="icon-"] {
+      display: inline-block;
+      margin-right: 11px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+}

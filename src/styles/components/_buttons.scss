@@ -21,7 +21,7 @@
     @extend .btn--secondary;
     margin-top: 15px;
     margin-bottom: 35px;
-    padding: 15px;
+    padding: 15px 35px;
     box-shadow: 0 6px 39px -1px lighten($color-secondary, 1%);
   }
 
@@ -63,6 +63,11 @@
   &--danger {
     color: $color-danger;
     background: rgba($color-danger, 0.1);
+  }
+
+  &--warning {
+    color: $color-warning;
+    background: rgba($color-warning, 0.1);
   }
 
   &:hover, &:active, &:focus {

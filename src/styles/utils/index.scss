@@ -25,4 +25,10 @@
 
 .flex {
   display: flex;
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.valign-center {
+    align-items: center;
+  }
 }

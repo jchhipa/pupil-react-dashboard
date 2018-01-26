@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
-import SelectDropdown from '../../../SelectDropdown.js'
+import SelectDropdown from '../../SelectDropdown.js'
 import PropTypes from 'prop-types';
 
-class RangeSelector extends Component {
+class PropertyFilter extends Component {
 
   constructor(props) {
 
-      super(props);
+    super(props);
 
-      this.state = {
-        current: 'all',
-      };
-    }
+    this.state = {
+      current: 'all',
+    };
+  }
 
-   
+
   changeSelector(range) {
     this.setState({
       current: range
     })
   }
 
-
   render() {
 
-   const currentRange = this.state.current;
+    const currentRange = this.state.current;
 
     return (
       <div className="container">
@@ -55,4 +54,4 @@ class RangeSelector extends Component {
 }
 
 
-export default RangeSelector;
+export default PropertyFilter;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FadeAndSlide from '../../Animations/FadeAndSlide';
 
 class Sales extends Component {
 
@@ -7,7 +8,15 @@ class Sales extends Component {
         return (
             <div id="page-sales">
                 <div className="container">
-                    Sales
+                    <FadeAndSlide
+                        startX={'-50px'}
+                        startY={'0px'}
+                        delay={100}
+                        duration={100}
+                    >
+                        <h1 className="page-title">Sales</h1>
+                    </FadeAndSlide>
+
                 </div>
             </div>
         );

@@ -7,7 +7,7 @@ class ViewsAnalytics extends Component {
 
         var options = {
             chart: {
-                height: 310,
+                height: 250,
                 type: 'area',
             },
             chartOptions: {

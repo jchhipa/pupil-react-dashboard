@@ -12,13 +12,13 @@ class ViewsAvgAnalytics extends Component {
                     <span className="title-right">Jan 2017 - Aug 2017</span>
                 </div>
 
-                <ProgressBar value={73} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'32:32'} />
-                <ProgressBar value={64} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'12:43'} />
-                <ProgressBar value={52} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'09:43'} />               
-                <ProgressBar value={43} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'33:54'} />               
-                <ProgressBar value={25} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'26:43'} />                
-                <ProgressBar value={29} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'22:45'} />                 
-                <ProgressBar value={70} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'32:54'} /> 
+                <ProgressBar value={73} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'32:32'} strokeWidth={1.5} trailWidth={1.5} />
+                <ProgressBar value={64} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'12:43'} strokeWidth={1.5} trailWidth={1.5} />
+                <ProgressBar value={52} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'09:43'} strokeWidth={1.5} trailWidth={1.5} />               
+                <ProgressBar value={43} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'33:54'} strokeWidth={1.5} trailWidth={1.5} />               
+                <ProgressBar value={25} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'26:43'} strokeWidth={1.5} trailWidth={1.5} />                
+                <ProgressBar value={29} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'22:45'} strokeWidth={1.5} trailWidth={1.5} />                 
+                <ProgressBar value={70} barColor={'#F6516A'} backgroundBarColor={'#fee5e9'} title={ '75 Spinka Parkwavs'} subtitle={'32:54'} strokeWidth={1.5} trailWidth={1.5} /> 
             </div>                       
         );
     }

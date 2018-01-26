@@ -37,14 +37,29 @@
     .header {
         display: flex;
         justify-content: space-between;
-        
+        .title {
+            color: $color-base;
+        }
+        .subtitle {
+            font-size: 14px;
+        }
+    }
+}
+
+.col-sm {
+    .rc-progress-bar {
+        .header {
+            position: relative;
+            top: 5px;
+        }
     }
 }
 
 .rc-pagination {
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     .rc-pagination-item {
         border: 0;
         border-radius: 50%;
@@ -89,5 +104,14 @@
         -webkit-text-stroke: 1px $color-gray ;
         -moz-text-stroke: 1px $color-gray ;
         text-stroke: 1px $color-gray ;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .rc-progress-bar {
+        path {
+            stroke-width: 1;
+        }
     }
 }
