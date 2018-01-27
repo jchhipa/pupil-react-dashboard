@@ -5,6 +5,7 @@ import PropertyFilter from './../PropertyFilter';
 import Listings from './Listings';
 import FadeAndSlide from '../../../Animations/FadeAndSlide';
 import SliderPopup from './../../../SliderPopup';
+import Sidebar from './Sidebar';
 
 import './Orders.css';
 
@@ -28,17 +29,19 @@ class Orders extends Component {
 										<i className="fa fa-close"></i>
 								</button>
 
-								<h2>Slider goes here</h2>
+								<Sidebar />
 						</SliderPopup>
 				)
 		}
 
 		closePopup() {
+				document.body.classList.remove("overlay")
 				this.setState({sliderPopup: false})
 		}
 
 
 		onListingClick() {
+			document.body.classList.add('overlay')
 			this.setState({sliderPopup: true})
 		}
 
@@ -59,7 +62,7 @@ class Orders extends Component {
 														<h1 className="page-title">Orders</h1>
 												</FadeAndSlide>
 												<div className="create-order">
-														<FadeAndSlide startX={'50px'} startY={'0px'} delay={150} duration={100}>
+														<FadeAndSlide startX={'20px'} startY={'0px'} delay={150} duration={100}>
 																<button type="submit" className="btn btn--glossy">CREATE ORDER</button>
 														</FadeAndSlide>
 												</div>

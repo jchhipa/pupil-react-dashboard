@@ -1,6 +1,9 @@
+
+
 body.overlay {
   overflow-x: hidden;
   overflow-y: auto;
+  transition: 0.3s ease all;
   &:after {
     background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
     bottom: 0;
@@ -10,6 +13,8 @@ body.overlay {
     right: 0;
     top: 0;
     z-index: 100;
+    transition: 0.3s ease all;
+    
   }
   main {
     filter: blur(2px);
@@ -23,6 +28,10 @@ body.overlay {
   right: 0;
   top: 0;
   z-index: 101;
+
+  .sidebar-main {
+    padding-top: 45px;
+  }
 }
 
 .side-popup {
@@ -31,22 +40,59 @@ body.overlay {
   top: 0px;
   min-height: 100vh;
   right: 0;
-  min-width: 595px;
-  max-width: 495px;
+  min-width: 545px;
+  max-width: 545px;
   z-index: 120;
-  padding: 25px;
-  box-shadow: -4px 0 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 10px 25px 20px;
+  box-shadow: -30px 0 80px 0 rgba(0,0,0,.05);
   overflow-x: hidden;
   overflow-y: auto;
+
+  .sidebar-info-block {
+    [class^="icon-"] {
+      border-right: 19px solid transparent;
+      margin-top: 12px;
+    }
+  }
+  
+
+  h6 {
+    color: $color-text;
+    font-size: 13px;
+    position: relative;
+    top: 2px;
+  }
+
   #close-popup {
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: -16px;
     z-index: 50;
     background: transparent;
     &:hover {
       background: transparent;
       color: darken($color-base, 10%);
     }
+    &:focus {
+      outline: 0;
+      box-shadow: 0;
+    }
+    .fa {
+      color: $color-text;
+      font-size: 32px;
+      -webkit-text-stroke: 4px #fff;
+      -moz-text-stroke: 4px #fff;
+      text-stroke: 4px #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .side-popup {
+    min-width: 100% !important;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }

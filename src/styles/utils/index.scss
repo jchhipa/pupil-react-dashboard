@@ -23,6 +23,10 @@
   }
 }
 
+.color-base {
+  color: $color-base;
+}
+
 .flex {
   display: flex;
   &.space-between {

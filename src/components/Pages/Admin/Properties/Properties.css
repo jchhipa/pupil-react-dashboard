@@ -3,3 +3,29 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.orders-sidebar .thumbnail-wrap .download {
+  display: flex;
+  width: 110px;
+  height: 110px;
+  padding: 8px;
+  background: #6edbd5;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: -28px;
+  transform: translate(0, -70px);
+  left: calc(100% - 80px);
+  cursor: pointer;
+}
+
+.orders-sidebar .thumbnail-wrap .download .fa {
+  margin-bottom: 10px;
+  font-size: 28px;
+  -webkit-text-stroke: 1px #6edbd5;
+  -moz-text-stroke: 1px #6edbd5;
+  text-stroke: 1px #6edbd5;
+}

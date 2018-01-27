@@ -1,0 +1,23 @@
+
+  .tag {
+    @extend .btn;
+    @extend .btn--no-shadow;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+    &--big {
+      padding: 13px 30px;
+    }
+    &.gray {
+        @extend .btn--gray;
+    }
+    &.danger {
+        @extend .btn--danger;
+    }
+    &.warning {
+      @extend .btn--warning;
+    }
+    &.success {
+      @extend .btn--success;
+    }
+  }

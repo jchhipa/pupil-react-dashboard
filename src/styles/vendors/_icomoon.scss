@@ -40,6 +40,7 @@
   color: #3a3a60;
 }
 .icon-credit-card:before {
+  font-size: 13px;  
   content: "\e903";
   color: #3a3a60;
 }
@@ -87,12 +88,12 @@
   color: #3a3a60;
 }
 .icon-bed, .icon-bath-tub, .icon-property-area {
-  font-size: 80px;
-  width: 20px;
-  height: 20px;
+  font-size: 90px;
+  width: 35px;
+  height: 35px;
   position: relative;
-  left: -20px;
   top: -26px;
+  transform: translate(-35px, 0);
 }
 .property-area {
   font-size: 96px;

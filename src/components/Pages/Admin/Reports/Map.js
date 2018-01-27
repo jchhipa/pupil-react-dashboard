@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactMapboxGl, { Layer, Feature, Marker} from "react-mapbox-gl";
+import ReactMapboxGl, { Layer, Feature, Marker, Popup } from "react-mapbox-gl";
 
 class Map extends Component {
 

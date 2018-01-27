@@ -21,7 +21,7 @@
     @extend .btn--secondary;
     margin-top: 15px;
     margin-bottom: 35px;
-    padding: 15px 35px;
+    padding: 18px 35px;
     box-shadow: 0 6px 39px -1px lighten($color-secondary, 1%);
   }
 
@@ -40,6 +40,10 @@
     [class^="icon-"] {
       margin-right: 5px;
     }
+  }
+
+  &--small {
+    padding: 6px 15px;
   }
 
   &--no-shadow {
@@ -63,11 +67,19 @@
   &--danger {
     color: $color-danger;
     background: rgba($color-danger, 0.1);
+    &-dark {
+      color: #fff;
+      background: rgba($color-danger, 0.91);
+    }
   }
 
   &--warning {
     color: $color-warning;
     background: rgba($color-warning, 0.1);
+  }
+
+  &--full-width {
+    width: 100%;
   }
 
   &:hover, &:active, &:focus {

@@ -30,8 +30,8 @@ class PropertyListItem extends Component {
                           <button className="btn btn--secondary btn--icon btn--no-shadow"><span className="fa fa-download"></span> Download</button>
                       </span>
                   </div>
-                  <div className="edit">
-                      <a><span className="icon-pen">
+                  <div className="edit" >
+                      <a onClick={this.props.onEdit}><span className="icon-pen">
                       </span></a>
                   </div>
                 </div>

@@ -16,8 +16,9 @@ class Listings extends Component {
           <ListItem
             title="239 Eastdown Park Road"
             subtitle="SW2 2DH"
-            imgSrc={'/assets/images/property18.jpg'}
+            imgSrc={'/assets/images/property3.jpg'}
             status="Offline"
+            onEdit={this.props.onEdit}
           />
         </FadeAndSlide>
         <FadeAndSlide
@@ -28,8 +29,9 @@ class Listings extends Component {
           <ListItem
             title="239 Eastdown Park Road"
             subtitle="SW2 2DH"
-            imgSrc={'/assets/images/property18.jpg'}
-            status="Offline"
+            imgSrc={'/assets/images/property9.png'}
+            status="Live"
+            onEdit={this.props.onEdit}
           />
         </FadeAndSlide>
         <FadeAndSlide
@@ -40,8 +42,9 @@ class Listings extends Component {
           <ListItem
             title="239 Eastdown Park Road"
             subtitle="SW2 2DH"
-            imgSrc={'/assets/images/property18.jpg'}
-            status="Offline"
+            imgSrc={'/assets/images/property13.png'}
+            status="Live"
+            onEdit={this.props.onEdit}
           />
         </FadeAndSlide>
         <FadeAndSlide
@@ -52,8 +55,9 @@ class Listings extends Component {
           <ListItem
             title="239 Eastdown Park Road"
             subtitle="SW2 2DH"
-            imgSrc={'/assets/images/property18.jpg'}
-            status="Offline"
+            imgSrc={'/assets/images/property4.png'}
+            status="Live"
+            onEdit={this.props.onEdit}
           />
         </FadeAndSlide>
 

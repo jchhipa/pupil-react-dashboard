@@ -2,8 +2,16 @@
 .orders-listings {
   .property-list-item {
     color: $color-base;
+    .flex {
+      flex: 1 25%;
+      border-right: 10px solid transparent;
+    }
     .tag {
       min-width: 150px;
+    }
+
+    .status {
+      max-width: 160px;
     }
     [class^="icon-"] {
       display: inline-block;

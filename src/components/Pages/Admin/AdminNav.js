@@ -8,9 +8,9 @@ class AdminNav extends Component {
         return (
             <li  className="pull-right">
                 <FadeAndSlide
-                    startX={'50px'}
-                    startY={'0px'}
-                    delay={150}
+                    startX={'20px'}
+                    startY={'30px'}
+                    delay={50}
                     duration={100}
                 >
                 <span style={{pointerEvents: 'none'}} className="btn btn--dark btn--icon">
