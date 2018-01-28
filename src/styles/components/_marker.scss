@@ -2,6 +2,9 @@
 .map-marker {
   color: #fff;
   position: relative;
+  display: flex;
+  left: 5px;
+  justify-content: center;
   &--primary {
       background: $color-base !important;
   }
@@ -10,17 +13,43 @@
   }
   .text {
     position: absolute;
-    z-index: 10;
-    transform: translateX(-72%);
+    z-index: 1;
     top: -14px;
+    display: block;
+    text-align: center;
+    transform: translateX(-75%);
+    left: 100%;
   }
+
+  [class^="icon"] {
+    position: relative;
+    left: 2px;
+    top: 2px;
+  }
+}
+
+.mapboxgl-marker {
+  z-index: 0 !important;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+  box-shadow: 0 48px 40px 0 rgba(#3a3a60, 0.23) !important;
+  .property-thumbnail {
+    margin-bottom: 0 !important;
+  }
+}
+
+.mapboxgl-popup {
+  z-index: 50;
+  min-width: 240px;
 }
 
 .pin {
   width: 30px;
   height: 30px;
   border-radius: 50% 50% 50% 0;
-  background: $color-base;
+  background: inherit;
   position: absolute;
   transform: rotate(-45deg);
   left: 50%;

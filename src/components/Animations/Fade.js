@@ -51,7 +51,7 @@ Fade.propTypes = {
 
 Fade.defaultProps = {
   duration: 300,
-  delay: 50
+  delay: 0
 };
 
 export default Fade;

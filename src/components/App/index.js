@@ -11,7 +11,7 @@ import Login from './../Pages/Login/';
 
 const DashboardLayout = ({children, ...rest}) => {
     return (
-      <div className="page page-dashboard">
+      <div className="app-main">
         <Header />
         <div className="main">{children}</div>
       </div>

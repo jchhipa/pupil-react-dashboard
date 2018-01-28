@@ -13,11 +13,11 @@ class Sidebar extends Component {
           </p>
         </div>
 
-        <p className="mt-2">
+        <div className="mt-2">
           <div className=" pl-5 pr-5">
             <button className="btn btn--glossy btn--full-width">DOWNLOAD PACK (77.2 MB)</button>
           </div>
-        </p>
+        </div>
 
         <div className="mt-4 mb-5 pl-5 pr-5">
           <div className="header">
@@ -46,7 +46,7 @@ class Sidebar extends Component {
         <div className="mt-2  pl-5 pr-5">
           <div className="thumbnail-wrap">
             <p className="color-base">KITCHEN</p>
-            <div className="thumbnail-image thumbnail-image--big" style={{background: "#211e34"}} />
+            <div className="thumbnail-image thumbnail-image--big" style={{backgroundImage: `url(/assets/images/property6.png)`}} />
             </div>
         </div>  
 
